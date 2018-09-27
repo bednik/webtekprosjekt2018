@@ -1,0 +1,41 @@
+body {
+    background-color: #ffece0;
+    font-family: "Verdana", Verdana, serif;
+}
+
+.section {
+    margin-top: 40px;
+}
+
+header {
+    border-bottom: solid;
+    border-width: 2px;
+}
+
+h2 span {
+    font-size: small;
+}
+
+#rightStuff {
+    overflow: hidden;
+    float: right;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+#OurClient img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    text-align: right;
+}
+
+#wrapper {
+    max-width: 720px;
+    margin: 30px auto;
+}
