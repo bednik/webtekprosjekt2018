@@ -1,5 +1,6 @@
 body {
     background-color: #ffece0;
+    color: black;
     font-family: "Verdana", Verdana, serif;
 }
 
@@ -16,23 +17,8 @@ h2 span {
     font-size: small;
 }
 
-#rightStuff {
-    overflow: hidden;
-    float: right;
-    padding: 10px;
-    margin-top: 25px;
-}
-
 li {
     margin-top: 10px;
-}
-
-#OurClient img {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    display: inline-block;
-    text-align: right;
 }
 
 #wrapper {
@@ -40,11 +26,7 @@ li {
     margin: 30px auto;
 }
 
-#Content img{
-    display: inline-block;
-    width: 500px;
-}
-#mock1,#mock2, #mock3, #mock4, #mock5{
-    width: fit-content;
-    margin: auto
+.mock {
+    width: 100%;
+    margin: auto;
 }
