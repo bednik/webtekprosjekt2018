@@ -8,6 +8,7 @@ body {
 
 }
 .section h2{
+    color: black;
     background-color: #f8d78e;
     border-color: #cc6328;
     border-style: outset;
@@ -45,7 +46,7 @@ li {
 }
 #mappestruktur{
     width: 40%;
-    margin: auto;    
+    margin: auto;
 }
 
 td,th{
@@ -56,4 +57,5 @@ td,th{
 }
 tbody tr:nth-child(2n+1){
     background-color: #80ffb3;
+    color: black;
 }
