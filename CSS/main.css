@@ -21,7 +21,7 @@ body {
 
     #logo {
         display: inline-block;
-        width: 50%;
+        width: 25%;
         margin: 0;
         padding: 0;
         float: left;
@@ -34,7 +34,7 @@ body {
         width: 10%;
         margin: 0;
         padding: 0;
-        float: left;
+        float: right;
     }
     nav ul li img {
         max-height: 25px;
@@ -46,6 +46,11 @@ body {
         padding: 30px 40px;
         text-decoration: none;
         font-size: 20px;
+    }
+    #logo a {
+        padding: 30px 40px;
+        text-align: left;
+
     }
     .rightnav a:hover {
         background:#A26A42;
