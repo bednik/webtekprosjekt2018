@@ -1,6 +1,7 @@
 body {
     font-family: Bahnschrift, "Verdana", Verdana, serif;
     font-size: 12px;
+    margin: 0;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -17,9 +18,20 @@ body {
         max-height: 77px;
         background-image: url("../IMG/navbar-background.png");
     }
-    nav ul li {
+
+    #logo {
+        display: inline-block;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        float: left;
+        font-family: "Segoe Script", Verdana, "Verdana", serif;
+        font-size: 28px;
+    }
+
+    nav ul li.rightnav {
         display:inline-block;
-        width: 20%;
+        width: 10%;
         margin: 0;
         padding: 0;
         float: left;
@@ -35,14 +47,11 @@ body {
         text-decoration: none;
         font-size: 20px;
     }
-    a:hover {
+    .rightnav a:hover {
         background:#A26A42;
     }
     header {
         margin: 0;
         padding: 0;
-    }
-    body {
-        margin: 0;
     }
 }
