@@ -22,7 +22,7 @@ body {
     #logo {
         display: inline-block;
         width: 25%;
-        margin: 0;
+        margin-top: 20px;
         padding: 0;
         float: left;
         font-family: "Segoe Script", Verdana, "Verdana", serif;
@@ -39,7 +39,7 @@ body {
     nav ul li img {
         max-height: 25px;
     }
-    nav ul li a {
+    .rightnav a {
         display: block;
         color: white;
         text-align: center;
@@ -50,7 +50,9 @@ body {
     #logo a {
         padding: 30px 40px;
         text-align: left;
-
+        text-decoration: none;
+        color: white;
+        margin: auto;
     }
     .rightnav a:hover {
         background:#A26A42;
