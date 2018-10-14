@@ -1,0 +1,62 @@
+body {
+    font-family: Bahnschrift, "Verdana", Verdana, serif;
+    font-size: 12px;
+    margin: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 77px;
+        background-image: url("../IMG/navbar-background.png");
+    }
+
+    #logo {
+        display: inline-block;
+        width: 25%;
+        margin: 0;
+        padding: 0;
+        float: left;
+        font-family: "Segoe Script", Verdana, "Verdana", serif;
+        font-size: 28px;
+    }
+
+    nav ul li.rightnav {
+        display:inline-block;
+        width: 10%;
+        margin: 0;
+        padding: 0;
+        float: right;
+    }
+    nav ul li img {
+        max-height: 25px;
+    }
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 30px 40px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    #logo a {
+        padding: 30px 40px;
+        text-align: left;
+
+    }
+    .rightnav a:hover {
+        background:#A26A42;
+    }
+    header {
+        margin: 0;
+        padding: 0;
+    }
+}
