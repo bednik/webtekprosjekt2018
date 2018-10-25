@@ -1,6 +1,14 @@
-// Toggle-funksjon for
+// Toggle-funksjon for navbar (Kun for mobil)
+var navToggled = false;
+navbarContent = document.getElementById("navContent");
 function toggleNavigation() {
-
+    if (!navToggled) {
+        navToggled = true;
+        navbarContent.style.display = "block";
+    } else {
+        navToggled = false;
+        navbarContent.style.display = "none";
+    }
 }
 
 // Importer navbaren. Skriptet plasseres der man vil at navbaren skal være.

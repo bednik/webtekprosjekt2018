@@ -9,7 +9,8 @@
     <header>
         <div id="navbar-wrapper"> <!-- Fordi index.html er i en annen mappe enn resten må navbaren skrives inn på vanlig måte her -->
             <nav class="navbar">
-                <ul>
+                <button onclick="toggleNavigation()" id="hamburger"><img src="IMG/hamburger_icon.png"></button>
+                <ul id="navContent">
                     <li id="logo">
                         <a href="index.html">Diavola Calabrese</a>
                     </li>
@@ -32,5 +33,20 @@
             </nav>
         </div>
     </header>
+
+<script>
+    // Toggle-funksjon for navbar (Kun for mobil)
+    var navToggled = false;
+    navbarContent = document.getElementById("navContent");
+    function toggleNavigation() {
+        if (!navToggled) {
+            navToggled = true;
+            navbarContent.style.display = "block";
+        } else {
+            navToggled = false;
+            navbarContent.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
