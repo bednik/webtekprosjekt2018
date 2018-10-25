@@ -5,27 +5,61 @@
     padding: 10px;
 }
 .grid-item {
-    display: grid;
-    grid-template-columns: 15% 5% 45% 35%;
+
     background-color: #5D6C3C;
     margin: 20px;
     padding: 10px;
+    height: fit-content;
     font-family: Bahnschrift, Verdana;
     color: white;
 
+
     text-align: left;
-    box-shadow: 3px 3px 3px 3px grey;
+    box-shadow: 2px 2px 2px 2px grey;
 }
 .cooking-number{
-    margin: 20px;
-    font-size: 48px;    
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 72px;
+    text-shadow:1px 1px black ;
 }
-#stapled-line{
+.stapled-line{
+    float: left;
+    border-left: 5px dashed white;
+    height: 150px;
+    margin-right: 20px;
+}
 
-    border-left: 3px dashed white;
+.cooking-text{
+    font-size: 12px;
+    width: 50%;
+    float: left;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background: #393939;
+    width: 100%;
+    color: white;
 
-
-
-
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: Bahnschrift, Verdana;
 
 }
+body{
+    margin: 0
+}
+#copyright{
+    float: left;
+    margin-left: 12px;
+}
+#footer_contact{
+    float: right;
+    margin-right: 12px;
+
+}
+
