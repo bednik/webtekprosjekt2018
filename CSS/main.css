@@ -1,22 +1,17 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: #EAEFEC;
-    padding: 10px;
-}
-.grid-item {
-
+.cooking-thingy{
     background-color: #5D6C3C;
     margin: 20px;
     padding: 10px;
     height: fit-content;
     font-family: Bahnschrift, Verdana;
     color: white;
-
-
     text-align: left;
     box-shadow: 2px 2px 2px 2px grey;
+
+    width: 45%;
+    height: 200px;
 }
+
 .cooking-number{
     float: left;
     margin-left: 20px;
@@ -26,6 +21,7 @@
     font-size: 72px;
     text-shadow:1px 1px black ;
 }
+
 .stapled-line{
     float: left;
     border-left: 5px dashed white;
@@ -38,6 +34,9 @@
     width: 50%;
     float: left;
 }
+
+
+
 footer{
     position: fixed;
     bottom: 0;
@@ -51,7 +50,9 @@ footer{
 
 }
 body{
-    margin: 0
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 #copyright{
     float: left;
@@ -60,6 +61,24 @@ body{
 #footer_contact{
     float: right;
     margin-right: 12px;
-
 }
 
+
+.cooking-wrapper{
+    background-color: #EAEFEC;
+    height: 100%;
+    width: 100%;
+}
+
+.cooking-1{
+    float: left;
+}
+.cooking-2{
+    float: right;
+}
+.cooking-3{
+    float: left;
+}
+.cooking-4{
+    float: right;
+}
