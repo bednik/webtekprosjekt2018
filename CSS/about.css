@@ -43,18 +43,24 @@ body {
 }
 
 h1 {
-  padding-bottom: 20px;
   font-weight: normal;
   text-transform: uppercase;
   margin-top: 0px;
 }
 
 hr {
-  background-image: url(hrline.png);
+  background-image: url(../img/hrline.png);
   height: 6px;
   width: 100%;
   border: none;
   margin: 25px 0 25px 0;
+}
+
+.scaleImg {
+  float: left;
+  width: 100%;
+  box-shadow: 0 0 5px 0.5px black;
+  margin-bottom: 20px;
 }
 
 #allergenListe > ul{
@@ -106,8 +112,8 @@ td {
     margin-bottom: 65px;
   }
 
-  .col-75 {
-    width: 72.5%;
+  .col-50 {
+    width: 47.5%;
     float: left;
     display: table-cell;
     height: 100%;
@@ -115,8 +121,8 @@ td {
     margin-right: 5%;
 }
 
-  .col-25 {
-    width: 22.5%;
+  .col-50 {
+    width: 47.5%;
     float: left;
     display: table-cell;
     height: 100%;
@@ -124,7 +130,7 @@ td {
     margin-right: 5%;
   }
 
-  .col-25:last-child, .col-75:last-child {
+  .col-50:last-child, .col-50:last-child {
     margin-right: 0;
   }
 
