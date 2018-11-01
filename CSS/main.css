@@ -17,6 +17,7 @@ nav ul {
     display: block;
 }
 
+/* Nam nam burger */
 #hamburger {
     width: fit-content;
     background: #333 url("../IMG/navbar-background.png");
