@@ -3,9 +3,22 @@ body {
     color: black;
     font-family: "Verdana", Verdana, serif;
 }
-
 .section {
-    margin-top: 40px;
+    margin-top: 60px;
+
+}
+.section h2{
+    color: black;
+    background-color: #f8d78e;
+    border-color: #cc6328;
+    border-style: outset;
+    border-width: 3px;
+    text-align: center;
+}
+h3{
+    width: fit-content;
+    border-style: solid;
+    border-width: 0 0 2px 0;
 }
 
 header {
@@ -28,5 +41,21 @@ li {
 
 .mock {
     width: 100%;
+    margin: 20px auto;
+
+}
+#mappestruktur{
+    width: 40%;
     margin: auto;
+}
+
+td,th{
+    border: solid;
+    border-width: 2px;
+    padding: 8px;
+    text-align: center
+}
+tbody tr:nth-child(2n+1){
+    background-color: #80ffb3;
+    color: black;
 }
