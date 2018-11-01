@@ -1,26 +1,69 @@
-body {
+body{
+    background-color: #eaefec;
+    float: left;
     font-family: Bahnschrift, "Verdana", Verdana, serif;
     font-size: 12px;
-    margin: 0;
+    margin: 0px;
 }
+#pageWrapper{
+    width: 94%;
+    float: left;
+    margin-top: 150px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+#right{
+    width: 40%;
+    float: right;
+}
+#left{
+    width: 50%;
+    padding: 3%;
+    float: left;
+    background-color: #cc6328;
+    color: #eaefec;
+    box-shadow: 8px 8px 6px grey;
+}
+#faceImage img{
+    max-width: 100%;
+    margin-right: 25%;
+    box-shadow: 8px 8px 6px grey;
+}
+#faceImage {
+    max-width: 70%;
+    margin-left: 15%;
+}
+#faceText{
+    max-width: 60%;
+    float: left;
 
+}
+#quote{
+    width: 35%;
+    float: right;
+}
+#quote p{
+    background-color: #eaefec;
+    color: #393939;
+}
 @media only screen and (min-width: 1024px) {
     nav ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
+        background-color: #333;
         position: fixed;
         top: 0;
         width: 100%;
         height: 100%;
         max-height: 77px;
-        background: #333 url("../IMG/navbar-background.png");
+        background-image: url("IMG/navbar-background.png");
     }
 
     #logo {
         display: inline-block;
-        width: 25%;
+        width: fit-content;
         margin-top: 20px;
         padding: 0;
         float: left;
@@ -30,7 +73,7 @@ body {
 
     nav ul li.rightnav {
         display:inline-block;
-        width: 10%;
+        width: fit-content  ;
         margin: 0;
         padding: 0;
         float: right;
@@ -42,7 +85,7 @@ body {
         display: block;
         color: white;
         text-align: center;
-        padding: 30px 40px;
+        padding: 30px 20px;
         text-decoration: none;
         font-size: 20px;
     }
