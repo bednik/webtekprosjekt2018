@@ -1,15 +1,19 @@
 .cooking-thingy{
     background-color: #5D6C3C;
     margin: 20px;
-    padding: 10px;
-    height: fit-content;
     font-family: Bahnschrift, Verdana;
     color: white;
     text-align: left;
     box-shadow: 2px 2px 2px 2px grey;
 
     width: 45%;
-    height: 200px;
+    height: fit-content;
+}
+@media only screen and (max-width: 1024px) {
+    .cooking-thingy{
+        width: fit-content;
+        height: fit-content;
+    }
 }
 
 .cooking-number{
