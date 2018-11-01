@@ -1,0 +1,23 @@
+body{
+    background-color: #eaefec;
+    float: left;
+}
+#pageWrapper{
+    width: fit-content;
+    float: left;
+}
+
+#right{
+    width: 33%;
+    float: left;
+}
+#left{
+    width: 33%;
+    float: left;
+}
+.container{
+    width: 100%
+}
+#faceImage img{
+    max-width: 80%;
+}
