@@ -9,15 +9,15 @@ nav {
     background: #333 url("../IMG/navbar-background.png");
 }
 
-nav ul {
+#navContent {
     display: none;
+    list-style-type: none;
 }
 
 #logo {
     display: block;
 }
 
-/* Nam nam burger */
 #hamburger {
     width: fit-content;
     background: #333 url("../IMG/navbar-background.png");
@@ -34,9 +34,8 @@ nav ul {
         display: none;
     }
 
-    nav ul {
+    #navContent {
         display: block;
-        list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
@@ -57,14 +56,14 @@ nav ul {
         font-size: 28px;
     }
 
-    nav ul li.rightnav {
+    #navContent li.rightnav {
         display:inline-block;
         width: fit-content  ;
         margin: 0;
         padding: 0;
         float: right;
     }
-    nav ul li img {
+    #navContent li img {
         max-height: 25px;
     }
     .rightnav a {
