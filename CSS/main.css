@@ -1,5 +1,120 @@
+body {
+  background-color: #EAEFEC;
+  color: black;
+  font-family: "Bahnschrift", sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
 
 
+#wrapper {
+  max-width: 1300px;
+  margin: auto;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+}
+
+.box {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+  box-shadow: 0 0 5px 0.2px black;
+  margin-bottom: 20px;
+}
+
+.yellow {
+  background-color: #F0AF3B;
+  color: white;
+}
+
+.orange {
+  background-color: #CC6328;
+  color: white;
+}
+
+.green {
+  background-color: #5D6C3C;
+  color: white;
+}
+
+.grey {
+  background-color: #E5E5E5;
+  color: black;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.scaleImg {
+  float: left;
+  width: 100%;
+  box-shadow: 0 0 5px 0.5px black;
+  margin-bottom: 20px;
+}
+
+.largeImg {
+  float: left;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 5px 0.5px black;
+  margin-bottom: 20px;
+}
+
+.rating {
+  height: 30px;
+  float: left;
+}
+
+.date {
+  float: right;
+  background-color: transparent;
+  color: grey;
+  margin-top: 7px;
+}
+
+hr {
+  background-image: url(hrline.png);
+  height: 6px;
+  width: 100%;
+  border: none;
+  margin: 25px 0 25px 0;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 5px;
+}
+
+.author {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+}
+
+.center {
+  text-align: center;
+}
+
+#averagerating {
+  margin: auto;
+  padding-top: 10px;
+  display: block;
+  height: 30px;
+}
 
 .cooking-number{
     float: left;
@@ -32,40 +147,10 @@
     width: 148px;
 }
 
-
-
-footer{
-    position: fixed;
-    bottom: 0;
-    background: #393939;
-    width: 100%;
-    color: white;
-
-    padding-top: 12px;
-    padding-bottom: 12px;
-    font-family: Bahnschrift, Verdana;
-
-}
-#copyright{
-    float: left;
-    margin-left: 12px;
-}
-#footer_contact{
-    float: right;
-    margin-right: 12px;
-}
-
-
-.cooking-wrapper{
-    background-color: #EAEFEC;
-    height: 100%;
-    width: 100%;
-}
-
 .cooking-thingy{
     background-color: #5D6C3C;
-    margin: 20px;
     font-family: Bahnschrift, Verdana;
+    margin: 20px;
     color: white;
     text-align: left;
     box-shadow: 2px 2px 2px 2px grey;
@@ -73,24 +158,24 @@ footer{
     width: 44%;
     height: fit-content;
 }
-.cooking-1{
+
+.cooking-1 {
     float: left;
 }
-.cooking-2{
+
+.cooking-2 {
     float: right;
 }
-.cooking-3{
+
+.cooking-3 {
     float: left;
 }
-.cooking-4{
+
+.cooking-4 {
     float: right;
     margin-bottom: 48px;
 }
-body {
-    font-family: Bahnschrift, "Verdana", Verdana, serif;
-    font-size: 12px;
-    margin: 0;
-}
+
 
 nav {
     width: 100%;
@@ -105,7 +190,6 @@ nav ul {
     display: block;
 }
 
-/* Nam nam burger */
 #hamburger {
     width: fit-content;
     background: #333 url("../IMG/navbar-background.png");
@@ -117,75 +201,286 @@ nav ul {
     height: 70px;
 }
 
-@media only screen and (min-width: 1024px) {
-    #hamburger {
-        display: none;
-    }
 
-    nav ul {
-        display: block;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        max-height: 77px;
-        background: #333 url("../IMG/navbar-background.png");
-    }
-
-    #logo {
-        display: inline-block;
-        width: fit-content;
-        margin-top: 20px;
-        padding: 0;
-        float: left;
-        font-family: "Segoe Script", Verdana, "Verdana", serif;
-        font-size: 28px;
-    }
-
-    nav ul li.rightnav {
-        display:inline-block;
-        width: fit-content  ;
-        margin: 0;
-        padding: 0;
-        float: right;
-    }
-    nav ul li img {
-        max-height: 25px;
-    }
-    .rightnav a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 30px 20px;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    #logo a {
-        padding: 30px 40px;
-        text-align: left;
-        text-decoration: none;
-        color: white;
-        margin: auto;
-    }
-    .rightnav a:hover {
-        background:#A26A42;
-    }
-    header {
-        margin: 0;
-        padding: 0;
-    }
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 19px;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1em;
+  background-color: #E5E5E5;
+  color: #323232;
+  resize: vertical;
+  border-color: transparent;
+  border-width: 1px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0.1px black;
+  min-height: 60px;
 }
+
+input[type="submit"] {
+  padding: 19px 27px;
+  margin-bottom: 10px;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1em;
+  background-color: #5D6C3C;
+  border-width: 0;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0.1px black;
+}
+
+input[type="submit"]:hover {
+  background-color:  #47522d;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:active {
+  background-color:  #47522d;
+  color: white;
+}
+
+.icon {
+  display: none;
+}
+
+.forminput {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+iframe {
+  height: 400px;
+  width: 100%;
+  border: 0;
+}
+
+#allergenListe > ul{
+  list-style-image: url('../Documents/IMG/smolblackpizza.png');
+
+}
+
+#allergenliste {
+  background-color:#CC6328;
+
+}
+
+#allergenliste p {
+  background-color: #CC6328;
+
+}
+
+table {
+  border: 3px solid black;
+  margin: 50px 10px 10px 10px;
+  margin: auto;
+}
+
+td {
+  margin: 20px 10px 20px 10px;
+  padding: 20px 50px 10px 20px;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+  #wrapper {
+    padding: 65px;
+  }
+
+  .table {
+    display: table; /**/
+    height: 100%;
+}
+
+  .box {
+    margin-bottom: 65px;
+  }
+
+  .scaleImg {
+    position: absolute;
+    height: calc(100% - 65px);
+    object-fit: cover;
+    margin-bottom: 65px;
+  }
+
+
+  .col-50 {
+    width: 47.5%;
+    float: left;
+    margin-right: 5%;
+  }
+
+
+  .col-67 {
+    width: 65%;
+    float: left;
+    display: table-cell;
+    height: 100%;
+    position: relative;
+  }
+
+  .col-33 {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    display: table-cell; /**/
+    height: 100%;
+    position: relative;
+  }
+
+  .col-33:last-child, .col-50:last-child {
+    margin-right: 0;
+  }
+
+
+  #hamburger {
+      display: none;
+  }
+
+  nav ul {
+      display: block;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      max-height: 77px;
+      background: #333 url("../IMG/navbar-background.png");
+  }
+
+  #logo {
+      display: inline-block;
+      width: fit-content;
+      margin-top: 20px;
+      padding: 0;
+      float: left;
+      font-family: "Segoe Script", Verdana, "Verdana", serif;
+      font-size: 28px;
+  }
+
+  nav ul li.rightnav {
+      display:inline-block;
+      width: fit-content  ;
+      margin: 0;
+      padding: 0;
+      float: right;
+  }
+  nav ul li img {
+      max-height: 25px;
+  }
+  .rightnav a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      text-decoration: none;
+      font-size: 20px;
+  }
+  #logo a {
+      padding: 30px 40px;
+      text-align: left;
+      text-decoration: none;
+      color: white;
+      margin: auto;
+  }
+
+  .rightnav a:hover {
+      background:#A26A42;
+  }
+
+  header {
+      margin: 0;
+      padding: 0;
+  }
+
+
+  .largeImg {
+    margin-bottom: 65px;
+  }
+
+  .icon {
+    display: block;
+    margin: 0 15px 10px 0;
+  }
+
+  .leftcontent {
+    float: left;
+    width: 50%;
+  }
+
+  .rightcontent {
+    float: left;
+    width: 50%;
+  }
+
+  .confirmscreenwrapper {
+    width: 47%;
+    margin: auto;
+    padding: 0;
+  }
+
+  .col-33:last-child, .col-50:last-child {
+    margin-right: 0;
+  }
+
+}
+
+
+
+/* --- confirmform.js ---*/
+
+#newsletterconfirmscreen, #contactconfirmscreen {
+  position: fixed;
+  color: black;
+  background-color: #D5D5D5;
+  width: 100%;
+  height: 100%;
+  display: none;
+  animation: fadein 0.3s;
+}
+
+.confirmscreenwrapper {
+  padding: 20px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
 @media only screen and (max-width: 1024px) {
     .cooking-thingy{
         width: 100%;
         height: fit-content;
         float: left;
         margin-right: 8px;
-    }
-    .stapled-line{
-        height: available;
     }
 }
