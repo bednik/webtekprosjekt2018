@@ -1,0 +1,204 @@
+body {
+  background-color: #EAEFEC;
+  color: black;
+  font-family: "Bahnschrift", sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+#wrapper {
+  max-width: 1300px;
+  margin: auto;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+}
+
+.box {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+  box-shadow: 0 0 5px 0.2px black;
+  margin-bottom: 20px;
+}
+
+.yellow {
+  background-color: #F0AF3B;
+  color: white;
+}
+
+.orange {
+  background-color: #CC6328;
+  color: white;
+}
+
+.green {
+  background-color: #5D6C3C;
+  color: white;
+}
+
+.largeImg {
+  float: left;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 5px 0.5px black;
+  margin-bottom: 20px;
+}
+
+hr {
+  background-image: url(hrline.png);
+  height: 6px;
+  width: 100%;
+  border: none;
+  margin: 25px 0 25px 0;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 19px;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1em;
+  background-color: #E5E5E5;
+  color: #323232;
+  resize: vertical;
+  border-color: transparent;
+  border-width: 1px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0.1px black;
+  min-height: 60px;
+}
+
+input[type="submit"] {
+  padding: 19px 27px;
+  margin-bottom: 10px;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1em;
+  background-color: #5D6C3C;
+  border-width: 0;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0.1px black;
+}
+
+input[type="submit"]:hover {
+  background-color:  #47522d;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:active {
+  background-color:  #47522d;
+  color: white;
+}
+
+.icon {
+  display: none;
+}
+
+.forminput {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+iframe {
+  height: 400px;
+  width: 100%;
+  border: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  #wrapper {
+    padding: 65px;
+  }
+
+  .col-50 {
+    width: 47.5%;
+    float: left;
+    margin-right: 5%;
+  }
+
+  .box {
+    margin-bottom: 65px;
+  }
+
+  .largeImg {
+    margin-bottom: 65px;
+  }
+
+  .icon {
+    display: block;
+    margin: 0 15px 10px 0;
+  }
+
+  .leftcontent {
+    float: left;
+    width: 50%;
+  }
+
+  .rightcontent {
+    float: left;
+    width: 50%;
+  }
+
+  .confirmscreenwrapper {
+    width: 47%;
+    margin: auto;
+    padding: 0;
+  }
+
+  .col-33:last-child, .col-50:last-child {
+    margin-right: 0;
+  }
+
+}
+
+/* --- confirmform.js ---*/
+
+#newsletterconfirmscreen, #contactconfirmscreen {
+  position: fixed;
+  color: black;
+  background-color: #D5D5D5;
+  width: 100%;
+  height: 100%;
+  display: none;
+  animation: fadein 0.3s;
+}
+
+.confirmscreenwrapper {
+  padding: 20px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
