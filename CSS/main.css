@@ -1,0 +1,92 @@
+body {
+    font-family: Bahnschrift, "Verdana", Verdana, serif;
+    font-size: 12px;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    background: #333 url("../IMG/navbar-background.png");
+}
+
+nav ul {
+    display: none;
+}
+
+#logo {
+    display: block;
+}
+
+/* Nam nam burger */
+#hamburger {
+    width: fit-content;
+    background: #333 url("../IMG/navbar-background.png");
+    border: none;
+}
+
+#hamburger img {
+    width: 70px;
+    height: 70px;
+}
+
+@media only screen and (min-width: 1024px) {
+    #hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 77px;
+        background: #333 url("../IMG/navbar-background.png");
+    }
+
+    #logo {
+        display: inline-block;
+        width: fit-content;
+        margin-top: 20px;
+        padding: 0;
+        float: left;
+        font-family: "Segoe Script", Verdana, "Verdana", serif;
+        font-size: 28px;
+    }
+
+    nav ul li.rightnav {
+        display:inline-block;
+        width: fit-content  ;
+        margin: 0;
+        padding: 0;
+        float: right;
+    }
+    nav ul li img {
+        max-height: 25px;
+    }
+    .rightnav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    #logo a {
+        padding: 30px 40px;
+        text-align: left;
+        text-decoration: none;
+        color: white;
+        margin: auto;
+    }
+    .rightnav a:hover {
+        background:#A26A42;
+    }
+    header {
+        margin: 0;
+        padding: 0;
+    }
+}

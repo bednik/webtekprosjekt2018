@@ -1,0 +1,51 @@
+body{
+    background-color: #eaefec;
+    float: left;
+    font-family: Bahnschrift, "Verdana", Verdana, serif;
+    font-size: 12px;
+    margin: 0px;
+}
+#pageWrapper{
+    width: 94%;
+    float: left;
+    margin-top: 150px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+#right{
+    width: 40%;
+    float: right;
+}
+#left{
+    width: 50%;
+    padding: 3%;
+    float: left;
+    background-color: #cc6328;
+    color: #eaefec;
+    box-shadow: 8px 8px 6px grey;
+}
+#faceImage img{
+    max-width: 100%;
+    margin-right: 25%;
+    box-shadow: 8px 8px 6px grey;
+}
+#faceImage {
+    max-width: 70%;
+    margin-left: 15%;
+}
+#faceText{
+    max-width: 60%;
+    float: left;
+
+}
+#quote{
+    width: 35%;
+    float: right;
+}
+#quote p{
+    background-color: #eaefec;
+    color: #393939;
+}
+@media only screen and (min-width: 1024px) {
+
+}
