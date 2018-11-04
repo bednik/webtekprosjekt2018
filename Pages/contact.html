@@ -1,16 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="import" href="../HTML-snippets/navbar.html">
-    <link rel="stylesheet" type="text/css" href="../CSS/main.css">
-    <title>Kontakt Diavola Calabrese</title>
-</head>
-<body>
-    <header>
-        <div id="navbar-wrapper">
-            <script src="../JS/navbar.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <title>Diavola Calabrese ~ Kontakt</title>
+    <link rel="stylesheet" type="text/css" href="contactstyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+    <!-- Confirm screen - contact form -->
+    <div id="contactconfirmscreen">
+      <div class="confirmscreenwrapper">
+        <div class="box yellow">
+          <h1>Innsending mottatt</h1>
+          <hr>
+          <p>Takk for henvendelsen, <span id="nameout"></span>.</p>
+          <p>Vi har mottatt meldingen din, og vil svare deg på e-post eller telefon så snart som mulig.</p>
+          <input id="closebutton1" type="submit" value="Returner til siden">
         </div>
-    </header>
-</body>
+      </div>
+    </div>
+
+    <!-- Confirm screen - newsletter form -->
+    <div id="newsletterconfirmscreen">
+      <div class="confirmscreenwrapper">
+        <div class="box orange">
+          <h1>Tusen takk!</h1>
+          <hr>
+          <p>Ditt abonnement er bekreftet og e-postadressen <i><span id="emailout"></span></i> har blitt lagt til i vår e-postliste.
+          <p>Du vil høre fra oss snart.</p>
+          <input id="closebutton2" type="submit" value="Returner til siden">
+        </div>
+      </div>
+    </div>
+
+    <!-- Page -->
+    <div id="wrapper">
+
+      <div class="col-50">
+
+        <div class="box yellow">
+          <h1>Kontakt oss</h1>
+          <hr>
+          <form id="contact">
+            <table>
+              <tr>
+                <td><img class="icon" src="navnikon.png" alt="Person"></td>
+                <td class="forminput"><input id="contactname" type="text" name="name" placeholder="Navn" pattern="^[a-zA-Z-æøåÆØÅ ]+$" required></td>
+              </tr>
+              <tr>
+                <td><img class="icon" src="epostikon.png" alt="Brev"></td>
+                <td class="forminput"><input type="email" name="email" placeholder="E-post" required></td>
+              </tr>
+              <tr>
+                <td><img class="icon" src="tlfikon.png" alt="Telefon"></td>
+                <td class="forminput"><input type="tel" name="phone" placeholder="Telefon" pattern="[0-9]{8,8}"></td>
+              </tr>
+              <tr>
+                <td><img class="icon" src="meldingikon.png" alt="Blyant"></td>
+                <td class="forminput"><textarea name="message" rows="10" placeholder="Melding" required></textarea></td>
+              </tr>
+              <tr>
+                <td><img class="icon" src="sendikon.png" alt="Papirfly"></td>
+                <td><input id="submitbutton" type="submit" value="Send"></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+
+        <div class="box orange">
+          <h1>Nyhetsbrev</h1>
+          <hr>
+          <form id="newsletter">
+            <table>
+              <tr>
+                <td><img class="icon" src="epostikon.png" alt="Brev"></td>
+                <td class="forminput"><input id="newsletteremail" type="email" name="email" placeholder="E-postadresse" required></td>
+              </tr>
+              <tr>
+                <td><img class="icon" src="sendikon.png" alt="Papirfly"></td>
+                <td><input id="subscribebutton" type="submit" value="Abonner"></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="col-50">
+
+        <img class="largeImg" src="pizza.jpg" alt="Pizza">
+
+        <div class="box orange">
+          <h1>Kontaktinfo</h1>
+          <hr>
+          <div class="leftcontent">
+            <h3>Postadresse</h3>
+            <p>
+              <i>Dr. Oetker Norge<br>
+                  Postboks 483<br>
+                  1411 Kolbotn</i>
+            </p>
+
+            <h3>Besøksadresse</h3>
+            <p>
+              <i><a target="_blank" href="https://www.google.no/maps/place/Rosenholmveien+25,+1414+Troll%C3%A5sen/@59.8544359,10.6574506,11z/data=!4m5!3m4!1s0x464168f3e34da483:0x76d39e77b5c5da2b!8m2!3d59.8220616!4d10.7871984">Rosenholmveien 25<br>
+                1414 Trollåsen</a></i>
+            </p>
+          </div>
+          <div class="rightcontent">
+          <h3>E-post</h3>
+            <p>
+              <i><a href="mailto:oetker@oetker.no">oetker@oetker.no</a></i>
+            </p>
+
+          <h3>Telefon</h3>
+            <p>
+              <i><a href="tel:+4766823420">+47 66 82 34 20</a></i>
+            </p>
+          </div>
+          <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBGVfyBULU-71-BkYbRAKNOhMpAZJer1-g&q=Rosenholmveien+25,+1414+Trollåsen&zoom=9" allowfullscreen></iframe>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="confirmform.js"></script>
+  </body>
 </html>
