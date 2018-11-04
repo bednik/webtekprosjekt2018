@@ -10,9 +10,9 @@ navbarContent = document.getElementById("navContent");
 function toggleNavigation() {
     if (!navToggled) {
         navToggled = true;
-        navbarContent.style.display = "block";
+        navbarContent.classList.remove("navHidden");
     } else {
         navToggled = false;
-        navbarContent.style.display = "none";
+        navbarContent.classList.add("navHidden");
     }
 }
