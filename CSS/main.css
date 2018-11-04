@@ -1,3 +1,91 @@
+
+
+
+.cooking-number{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 72px;
+    text-shadow:1px 1px black ;
+}
+
+.stapled-line{
+    float: left;
+    border-left: 5px dashed white;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.cooking-text{
+    margin-top: 24px;
+    font-size: 20px;
+    width: 50%;
+    float: left;
+}
+.cooking-image{
+    float: right;
+
+    box-shadow: 1px 1px 1px 1px black;
+    height: 148px;
+    width: 148px;
+}
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background: #393939;
+    width: 100%;
+    color: white;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: Bahnschrift, Verdana;
+
+}
+#copyright{
+    float: left;
+    margin-left: 12px;
+}
+#footer_contact{
+    float: right;
+    margin-right: 12px;
+}
+
+
+.cooking-wrapper{
+    background-color: #EAEFEC;
+    height: 100%;
+    width: 100%;
+}
+
+.cooking-thingy{
+    background-color: #5D6C3C;
+    margin: 20px;
+    font-family: Bahnschrift, Verdana;
+    color: white;
+    text-align: left;
+    box-shadow: 2px 2px 2px 2px grey;
+    padding: 10px;
+    width: 45%;
+    height: fit-content;
+}
+.cooking-1{
+    float: left;
+}
+.cooking-2{
+    float: right;
+}
+.cooking-3{
+    float: left;
+}
+.cooking-4{
+    float: right;
+    margin-bottom: 48px;
+}
 body {
     font-family: Bahnschrift, "Verdana", Verdana, serif;
     font-size: 12px;
@@ -88,5 +176,16 @@ nav ul {
     header {
         margin: 0;
         padding: 0;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .cooking-thingy{
+        width: 100%;
+        height: fit-content;
+        float: left;
+        margin-right: 8px;
+    }
+    .stapled-line{
+        height: available;
     }
 }
