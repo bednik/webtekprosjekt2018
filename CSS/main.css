@@ -104,10 +104,6 @@ body {
         display: none;
     }
 
-    .navbar {
-        float: left;
-    }
-
     .navHidden, .navContent {
         display: inline-block;
     }
@@ -120,7 +116,7 @@ body {
 
     .navContentContainer {
         float: right;
-        width: 40%;
+        width: 60%;
         position: absolute;
         height: 100%;
         right: 0;
@@ -129,22 +125,28 @@ body {
     .navContent {
         height: 100%;
         margin: 0;
+        width: 100%;
+        right: 0;
     }
 
     .navContent li {
         text-align: center;
         display: inline-block;
-        margin: auto;
-        padding: 30px;
+        margin: 0;
+        padding: 0;
+        height: 100%;
         float: left;
-        width: 10%;
+        width: 20%;
+
     }
 
     .link {
         position: relative;
+        text-align: center;
+        padding: 30px 20px;
+        display: block;
+        line-height: 50px;
         width: 100%;
-        height: 100%;
-        display: inline-block;
     }
 
     .logoContainer {
