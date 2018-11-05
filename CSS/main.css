@@ -112,13 +112,48 @@ body {
         display: inline-block;
     }
 
-    .navContentContainer {
+    .mobileContainer {
+        width: 40%;
+        margin: 0;
         float: left;
+    }
+
+    .navContentContainer {
+        float: right;
+        width: 40%;
+        position: absolute;
+        height: 100%;
+        right: 0;
+    }
+
+    .navContent {
+        height: 100%;
+        margin: 0;
+    }
+
+    .navContent li {
+        text-align: center;
+        display: inline-block;
+        margin: auto;
+        padding: 30px;
+        float: left;
+        width: 10%;
+    }
+
+    .link {
+        position: relative;
         width: 100%;
-        overflow: hidden;
+        height: 100%;
+        display: inline-block;
     }
 
     .logoContainer {
+        padding: 30px 40px;
         position: relative;
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
     }
 }
