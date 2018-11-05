@@ -11,12 +11,7 @@
     text-shadow:1px 1px black ;
 }
 
-.stapled-line{
-    float: left;
-    border-left: 5px dashed white;
-    height: 150px;
-    margin-right: 20px;
-}
+
 
 .cooking-text{
     margin-top: 24px;
@@ -62,30 +57,8 @@ footer{
     width: 100%;
 }
 
-.cooking-thingy{
-    background-color: #5D6C3C;
-    margin: 20px;
-    font-family: Bahnschrift, Verdana;
-    color: white;
-    text-align: left;
-    box-shadow: 2px 2px 2px 2px grey;
-    padding: 10px;
-    width: 45%;
-    height: fit-content;
-}
-.cooking-1{
-    float: left;
-}
-.cooking-2{
-    float: right;
-}
-.cooking-3{
-    float: left;
-}
-.cooking-4{
-    float: right;
-    margin-bottom: 48px;
-}
+
+
 body {
     font-family: Bahnschrift, "Verdana", Verdana, serif;
     font-size: 12px;
@@ -177,14 +150,47 @@ nav ul {
         padding: 0;
     }
 }
-@media only screen and (max-width: 1024px) {
+.cooking-thingy{
+    background-color: #5D6C3C;
+    font-family: Bahnschrift, Verdana;
+    color: white;
+    text-align: left;
+    box-shadow: 2px 2px 2px 2px grey;
+    padding: 10px;
+    width: 100%;
+    height: fit-content;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.stapled-line{
+    float: left;
+    border-left: 5px dashed white;
+    height: 150px;
+    margin-right: 20px;
+
+}
+.cooking-4{
+    margin-bottom: 48px;
+}
+@media only screen and (min-width: 1024px) {
     .cooking-thingy{
-        width: 100%;
-        height: fit-content;
-        float: left;
-        margin-right: 8px;
+        width: 45%;
+
+        margin-left: 20px;
+
     }
-    .stapled-line{
-        height: available;
+    .cooking-1{
+        float: left;
+    }
+    .cooking-2{
+        float: right;
+    }
+    .cooking-3{
+        float: left;
+    }
+    .cooking-4{
+        float: right;
+        margin-bottom: 48px;
     }
 }
