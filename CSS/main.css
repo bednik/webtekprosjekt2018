@@ -319,27 +319,32 @@ footer{
     text-shadow:1px 1px black ;
     text-align: center;
 }
+
 .cooking-text{
     margin: auto 0;
-    width: available;
     font-size: 20px;
-    width: 48%;
-    float: left;
+    display: table-cell;
     text-align: center;
-    vertical-align: bottom;
+    vertical-align: middle;
+    width: 37%;
 
+}
+.cooking-text-wrapper{
+    display: table;
+    float: left;
+    height: available;
+    width: 48%;
+    height: 150px;
 }
 .cooking-image{
     float: right;
     box-shadow: 1px 1px 1px 1px black;
     height: 148px;
     width: 148px;
-
-
-
 }
 
 .cooking-thingy{
+    display: table;
     background-color: #5D6C3C;
     color: white;
     text-align: left;
@@ -384,7 +389,7 @@ footer{
         float: right;
         margin-bottom: 48px;
     }
-    .cooking-text{
+    .cooking-text-wrapper{
         width: 37%;
     }
 
