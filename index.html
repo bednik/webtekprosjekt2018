@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
     <head>
         <meta charset="UTF-8">
         <title>Diavola Calabrese</title>
@@ -10,21 +9,22 @@
     <body>
         <header>
             <nav class="navbar">
-                <ul>
+                <button onclick="toggleNavigation()" id="hamburger"><img src="IMG/hamburger_icon.png" width="70"></button>
+                <ul id="navContent">
                     <li id="logo">
                         <a href="index.html">Diavola Calabrese</a>
                     </li>
                     <li class="rightnav">
-                        <a href="pages/contact.html">KONTAKT</a>
+                        <a href="contact.html">KONTAKT</a>
                     </li>
                     <li class="rightnav">
-                        <a href="pages/cooking.html">TILBEREDNING</a>
+                        <a href="cooking.html">TILBEREDNING</a>
                     </li>
                     <li class="rightnav">
-                        <a href="pages/reviews.html">OMTALER</a>
+                        <a href="reviews.html">OMTALER</a>
                     </li>
                     <li class="rightnav">
-                        <a href="pages/about.html">OM PIZZAEN</a>
+                        <a href="about.html">OM PIZZAEN</a>
                     </li>
                     <li class="rightnav">
                         <a href="index.html">HJEM</a>
@@ -32,47 +32,71 @@
                 </ul>
             </nav>
         </header>
-        <div id="pageWrapper">
-            <div id="left">
-                <div id="faceText">
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-7">
+                <div class="col-8"></div>
+                <div class="col-50">
+
                     <p>
-                        When you got the yams (What's the yams?) - The yam is the power that be - 
-                        You can smell it when I'm walking down the street - (Oh yes we can, oh yes we can) - 
-                        I can dig rapping, but a rapper with a ghost writer? - What the fuck happened? (Oh no) 
-                        I swore I wouldn't tell - But most of y'all share bars, like you got the bottom bunk in a
-                        two man cell - (A two man cell) - Something's in the water (Something's in the water) - 
-                        And if I got a brown nose for some gold then I'd rather be a bum than a motherfuckin' baller
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.
                     </p>
-                    <p>
-                        When you got the yams (What's the yams?) - The yam is the power that be - 
-                        You can smell it when I'm walking down the street - (Oh yes we can, oh yes we can) - 
-                        I can dig rapping, but a rapper with a ghost writer? - What the fuck happened? (Oh no) 
-                        I swore I wouldn't tell - But most of y'all share bars, like you got the bottom bunk in a
-                        two man cell - (A two man cell) - Something's in the water (Something's in the water) - 
-                        And if I got a brown nose for some gold then I'd rather be a bum than a motherfuckin' baller
-                    </p>
+                    <p>Nedtelling til internasjonal pizzadag</p>
+                    <div id="counterHere"></div>
+
                 </div>
-                    <div id="quote">
-                        <p>
-                            PURE PERFECTION IN EVERY SLICE
-                        </p>
-                    </div>   
+                <div class="col-8"></div>
+                <div class = "col-25">
+
+                    <canvas id="canvas" width="140" height="140" style="border:1px solid black"></canvas>
+
                 </div>
-            <div id="right">
-                <div id="faceImage">
-                    <img src="Documents/IMG/front_pizza.jpg" alt="Front pizza">
-                </div>
+                <div class="col-8"></div>
             </div>
+            <div class = "col-1"></div>
+            <div class = "col-4">
+
+                <img src="IMG/front_pizza.jpg" width="300">
+
+            </div>
+
         </div>
+        <script>
+            var canvas = document.querySelector('canvas')
+            var context = canvas.getContext('2d');
+            context.fillStyle = "white";
+            context.fillRect(0,0,canvas.height,canvas.width);
+            function drawText(text, x, y) {
+            context.fillStyle = 'black';
+            context.font = "20px Bahnschrift"
+            context.fillText(text, x, y);
+            }
+            drawText("PURE", 7,40)
+            drawText("PERFECTION",16,60)
+            drawText("IN",25,80)
+            drawText("EVERY",34,100)
+            drawText("SLICE", 43, 120)
+        // Toggle-funksjon for navbar (Kun for mobil)
+
+        let navToggled = true;
+        navbarContent = document.getElementById("navContent");
+        function toggleNavigation() {
+            if (!navToggled) {
+                navToggled = true;
+                navbarContent.style.display = "block";
+            } else {
+                navToggled = false;
+                navbarContent.style.display = "none";
+            }
+        }
+    </script>
+    <script type="text/javascript" src="JS/counter.js"></script>
     </body>
 </html>
-=======
-<head>
-    <meta charset="UTF-8">
-    <title>Diavola Calabrese</title>
-</head>
-<body>
-    <div>Hallaballa</div>
-</body>
-</html>
->>>>>>> Ingvild
