@@ -6,6 +6,44 @@ body {
   margin: 0;
 }
 
+.navbar {
+    background: #333 url("../IMG/navbar-background.png");
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.logoContainer {
+    display: inline-block;
+    position: absolute;
+    width: fit-content;
+}
+
+.logo {
+    font-family: "Segoe Script", Verdana, "Verdana", serif;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+}
+
+.navContent {
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    height: 100%;
+}
+
+.link:hover {
+    background-color: #cc6328;
+}
 
 #wrapper {
   max-width: 1300px;
