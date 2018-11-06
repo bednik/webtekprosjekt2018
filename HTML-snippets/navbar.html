@@ -1,23 +1,27 @@
 <nav class="navbar">
-    <button onclick="toggleNavigation()" id="hamburger"><img src="../IMG/hamburger_icon.png"></button>
-    <ul id="navContent">
-        <li id="logo">
-            <a href="../index.html">Diavola Calabrese</a>
-        </li>
-        <li class="rightnav">
-            <a href="../pages/contact.html">KONTAKT</a>
-        </li>
-        <li class="rightnav">
-            <a href="../pages/cooking.html">TILBEREDNING</a>
-        </li>
-        <li class="rightnav">
-            <a href="../pages/reviews.html">OMTALER</a>
-        </li>
-        <li class="rightnav">
-            <a href="../pages/about.html">OM PIZZAEN</a>
-        </li>
-        <li class="rightnav">
-            <a href="../index.html">HJEM</a>
-        </li>
-    </ul>
+    <div class="mobileContainer">
+        <button onclick="toggleNavigation()" class="hamburger"><img src="../IMG/hamburger_icon.png"></button>
+        <div class="logoContainer">
+            <a class="logo" href="../index.html">Diavola Calabrese</a>
+        </div>
+    </div>
+    <div class="navContentContainer">
+        <ul class="navContent navHidden" id="navContent">
+            <li>
+                <a class="link" href="../index.html">HJEM</a>
+            </li>
+            <li>
+                <a class="link" href="../pages/about.html">OM PIZZAEN</a>
+            </li>
+            <li>
+                <a class="link" href="../pages/reviews.html">OMTALER</a>
+            </li>
+            <li>
+                <a class="link" href="../pages/cooking.html">TILBEREDNING</a>
+            </li>
+            <li>
+                <a class="link" href="../pages/contact.html">KONTAKT</a>
+            </li>
+        </ul>
+    </div>
 </nav>
