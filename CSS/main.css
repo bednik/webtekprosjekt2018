@@ -74,7 +74,7 @@ body {
 }
 
 hr {
-  background-image: url(hrline.png);
+  background-image: url(../img/hrline.png);
   height: 6px;
   width: 100%;
   border: none;
@@ -276,7 +276,6 @@ iframe {
 }
 
 table {
-  border: 3px solid black;
   margin: 50px 10px 10px 10px;
   margin: auto;
 }
@@ -287,21 +286,9 @@ td {
   font-size: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+th {
+  text-align: left;
+}
 
 @media screen and (min-width: 1024px) {
   #wrapper {
@@ -319,18 +306,10 @@ td {
 
   .scaleImg {
     position: absolute;
-    height: calc(100% - 65px);
+    /*height: calc(100% - 65px);*/
     object-fit: cover;
     margin-bottom: 65px;
   }
-
-
-  .col-50 {
-    width: 47.5%;
-    float: left;
-    margin-right: 5%;
-  }
-
 
   .col-67 {
     width: 65%;
@@ -350,6 +329,27 @@ td {
   }
 
   .col-33:last-child, .col-50:last-child {
+    margin-right: 0;
+  }
+  .col-50 {
+    width: 47.5%;
+    float: left;
+    display: table-cell;
+    height: 100%;
+    position: relative;
+    margin-right: 5%;
+}
+
+  .col-50 {
+    width: 47.5%;
+    float: left;
+    display: table-cell;
+    height: 100%;
+    position: relative;
+    margin-right: 5%;
+  }
+
+  .col-50:last-child, .col-50:last-child {
     margin-right: 0;
   }
 

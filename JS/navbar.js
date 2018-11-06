@@ -1,6 +1,8 @@
 // Importer navbaren. Skriptet plasseres der man vil at navbaren skal være.
-let content = document.querySelector('link[rel="import"]').import;
-let el = content.querySelector('.navbar');
+let link = document.querySelector('link[rel="import"]')
+let content = link.import;
+let el = content.querySelector(".navbar");
+
 document.body.appendChild(el.cloneNode(true));
 
 // Toggle-funksjon for navbar (Kun for mobil)
