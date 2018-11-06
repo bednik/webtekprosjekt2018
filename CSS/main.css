@@ -432,6 +432,70 @@ td {
     margin-right: 0;
   }
 
+    .hamburger {
+        display: none;
+    }
+
+    .navHidden, .navContent {
+        display: inline-block;
+    }
+
+    .navbar {
+        overflow: hidden;
+    }
+
+    .mobileContainer {
+        width: 30%;
+        margin: 0;
+        float: left;
+    }
+
+    .navContentContainer {
+        width: 70%;
+        position: absolute;
+        height: 100%;
+        right: 0;
+    }
+
+    .navContent {
+        float: right;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: right;
+    }
+
+    .navContent li {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        margin: 0;
+        padding-right: 10px;
+        height: 100%;
+        width: 17%;
+    }
+
+    .navContent li:last-child {
+        padding-right: 0;
+    }
+
+    .link {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        line-height: 100px;
+    }
+
+    .logoContainer {
+        padding: 30px 40px;
+        position: relative;
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+    }
 }
 
 
