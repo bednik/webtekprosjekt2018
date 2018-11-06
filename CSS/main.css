@@ -375,7 +375,6 @@ td {
 }
 
 
-
 #footer {
     position: fixed;
     bottom: 0;
@@ -508,7 +507,7 @@ td {
     width: 100%;
     height: fit-content;
     float: left;
-    margin-top: 20px;
+
     margin-bottom: 20px;
 }
 .stapled-line{
@@ -524,7 +523,6 @@ td {
 @media only screen and (min-width: 1024px) {
     .cooking-thingy {
         width: 45%;
-        margin-left: 20px;
 
     }
 
@@ -542,7 +540,7 @@ td {
 
     .cooking-4 {
         float: right;
-        margin-bottom: 48px;
+        margin-bottom: 0;
     }
     .cooking-text-wrapper{
         width: 37%;
