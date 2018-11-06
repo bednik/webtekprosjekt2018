@@ -376,7 +376,7 @@ td {
 
 
 
-footer{
+footer {
     position: fixed;
     bottom: 0;
     background: #393939;
@@ -386,7 +386,7 @@ footer{
     padding-top: 12px;
     padding-bottom: 12px;
     font-family: Bahnschrift, Verdana;
-
+}
     .hamburger {
         display: none;
     }
@@ -451,7 +451,7 @@ footer{
     .logo {
         width: 100%;
     }
-}
+
 #copyright{
     float: left;
     margin-left: 12px;
