@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title> Counter </title>
-  <link rel="stylesheet" type="text/css" href="../CSS/counter.css"></link>
-</head>
-<body>
-  <h1> nedtelling </h1>
-  <div id="counterHere">
-  </div>
-<<<<<<< HEAD
-  <script>
 
     //henter inn diven fra html
     let div = document.querySelector("#counterHere");
@@ -38,20 +25,3 @@
     }
     //kaller på funksjoene hvert sekund
     let call = setInterval(function() {counter()}, 1000);
-
-
-
-
-
-
-  </script>
-
-
-
-
-</body>
-=======
-  <script type="text/javascript" src="../JS/counter.js"></script>
-</body>
-</html>
->>>>>>> dev

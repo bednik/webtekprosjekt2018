@@ -1,4 +1,3 @@
-
 body {
   background-color: #EAEFEC;
   color: black;
@@ -6,7 +5,6 @@ body {
   font-weight: normal;
   margin: 0;
 }
-
 
 #wrapper {
   max-width: 1300px;
@@ -25,8 +23,8 @@ body {
   margin-bottom: 20px;
 }
 
-.green {
-  background-color: #5D6C3C;
+.yellow {
+  background-color: #F0AF3B;
   color: white;
 }
 
@@ -42,20 +40,6 @@ body {
   padding: 20px;
 }
 
-h1 {
-  font-weight: normal;
-  text-transform: uppercase;
-  margin-top: 0px;
-}
-
-hr {
-  background-image: url(../img/hrline.png);
-  height: 6px;
-  width: 100%;
-  border: none;
-  margin: 25px 0 25px 0;
-}
-
 .scaleImg {
   float: left;
   width: 100%;
@@ -63,46 +47,70 @@ hr {
   margin-bottom: 20px;
 }
 
-#allergenListe > ul{
-  list-style-image: url('../Documents/IMG/smolblackpizza.png');
-
+.rating {
+  height: 30px;
+  float: left;
 }
 
-#allergenliste {
-  background-color:#CC6328;
-
+.date {
+  float: right;
+  background-color: transparent;
+  color: grey;
+  margin-top: 7px;
 }
 
-#allergenliste p {
-  background-color: #CC6328;
-
+hr {
+  background-image: url(hrline.png);
+  height: 6px;
+  width: 100%;
+  border: none;
+  margin: 25px 0 25px 0;
 }
 
+h1, h2, h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
 
-table {
-<<<<<<< HEAD
-  border: 3px solid black;
-=======
->>>>>>> dev
-  margin: 50px 10px 10px 10px;
+h1 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 5px;
+}
+
+.author {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+}
+
+.center {
+  text-align: center;
+}
+
+#averagerating {
   margin: auto;
+  padding-top: 10px;
+  display: block;
+  height: 30px;
 }
 
-td {
-  margin: 20px 10px 20px 10px;
-  padding: 20px 50px 10px 20px;
-  font-size: 30px;
-}
-
-@media  screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   #wrapper {
     padding: 65px;
   }
 
   .table {
-    display: table;
+    display: table; /**/
     height: 100%;
-  }
+}
 
   .box {
     margin-bottom: 65px;
@@ -115,26 +123,25 @@ td {
     margin-bottom: 65px;
   }
 
-  .col-50 {
-    width: 47.5%;
-    float: left;
-    display: table-cell;
-    height: 100%;
-    position: relative;
-    margin-right: 5%;
-}
 
-  .col-50 {
-    width: 47.5%;
+  .col-67 {
+    width: 65%;
     float: left;
     display: table-cell;
     height: 100%;
     position: relative;
-    margin-right: 5%;
   }
 
-  .col-50:last-child, .col-50:last-child {
+  .col-33 {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    display: table-cell; /**/
+    height: 100%;
+    position: relative;
+  }
+
+  .col-33:last-child, .col-50:last-child {
     margin-right: 0;
   }
-
 }

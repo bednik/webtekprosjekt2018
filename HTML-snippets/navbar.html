@@ -1,7 +1,60 @@
-<div>
-    <h1>This is my header</h1>
-    <div id = "navbar">
-        <div class = "Tab">Home</div>
-        <div class = "Tab">Contact</div>
+<!DOCTYPE html>
+<html>
+<nav class="navbar">
+    <button onclick="toggleNavigation()" id="hamburger"><img src="../IMG/hamburger_icon.png"></button>
+    <ul id="navContent">
+        <li id="logo">
+            <a href="../index.html">Diavola Calabrese</a>
+        </li>
+        <li class="rightnav">
+            <a href="../Pages/contact.html">KONTAKT</a>
+        </li>
+        <li class="rightnav">
+            <a href="../Pages/cooking.html">TILBEREDNING</a>
+        </li>
+        <li class="rightnav">
+            <a href="../Pages/reviews.html">OMTALER</a>
+        </li>
+        <li class="rightnav">
+            <a href="../Pages/about.html">OM PIZZAEN</a>
+        </li>
+        <li class="rightnav">
+            <a href="../index.html">HJEM</a>
+        </li>
+    </ul>
+    <script src="../JS/navbar.js"></script>
+</nav>
+
+<!-- Could'nt import two different html files so had to add footer and navbar to same file-->
+<footer class="footer">
+    <style>
+        footer{
+            position: fixed;
+            bottom: 0;
+            background: #393939;
+            width: 100%;
+            color: white;
+
+            padding-top: 12px;
+            padding-bottom: 12px;
+            font-family: Bahnschrift, Verdana, serif;
+
+        }
+        body{
+            margin: 0
+        }
+        #copyright{
+            float: left;
+            margin-left: 12px;
+        }
+        #footer_contact{
+            float: right;
+            margin-right: 12px;
+
+        }</style>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <div id="wrapper">
+        <div id="copyright">&copy; 2018 Diavola Calabrese</div>
+        <div id="footer_contact">contact@diavolacalabrese.info | 472 75 078</div>
     </div>
-</div>
+</footer>
