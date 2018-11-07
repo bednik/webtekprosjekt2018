@@ -283,7 +283,7 @@ iframe {
 .cooking-text-wrapper{
     display: table;
     float: left;
-    width: 48%;
+    width: 40%;
     height: 150px;
 }
 .cooking-image{
@@ -309,7 +309,7 @@ iframe {
     float: left;
     border-left: 5px dashed white;
     height: 150px;
-    margin-right: 20px;
+    margin-right: 5px;
 
 }
 .cooking-4{
@@ -506,6 +506,9 @@ iframe {
     }
     .cooking-text-wrapper{
         width: 37%;
+    }
+    .stapled-line{
+        margin-right: 20px;
     }
 
 }
