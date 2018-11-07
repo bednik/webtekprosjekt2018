@@ -248,17 +248,15 @@ iframe {
 
 .cooking-text{
     margin: auto 0;
-    font-size: 20px;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
     width: 37%;
-
 }
 .cooking-text-wrapper{
     display: table;
     float: left;
-    width: 40%;
+    width: 37%;
     height: 150px;
 }
 .cooking-image{
@@ -269,6 +267,7 @@ iframe {
 }
 
 .cooking-thingy{
+    box-sizing: border-box;
     display: table;
     background-color: #5D6C3C;
     color: white;
@@ -278,14 +277,14 @@ iframe {
     width: 100%;
     height: fit-content;
     float: left;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .stapled-line{
     float: left;
     border-left: 5px dashed white;
     height: 150px;
     margin-right: 5px;
-
+    margin-left: 5px;
 }
 .cooking-4{
     margin-bottom: 48px;
@@ -468,7 +467,7 @@ iframe {
 @media only screen and (min-width: 1025px) {
     .cooking-thingy {
         width: 45%;
-
+        margin-bottom: 65px;
     }
 
     .cooking-1 {
