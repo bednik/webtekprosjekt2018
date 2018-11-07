@@ -306,7 +306,7 @@ th {
 
   .scaleImg {
     position: absolute;
-    /*height: calc(100% - 65px);*/
+    height: calc(100% - 65px);
     object-fit: cover;
     margin-bottom: 65px;
   }
@@ -323,7 +323,7 @@ th {
     width: 30%;
     float: left;
     margin-right: 5%;
-    display: table-cell; /**/
+    display: table-cell; 
     height: 100%;
     position: relative;
   }
