@@ -60,7 +60,6 @@ body {
 .largeImg {
     float: left;
     width: 100%;
-    height: 100%;
     box-shadow: 0 0 5px 0.5px black;
     margin-bottom: 20px;
 }
@@ -304,8 +303,7 @@ iframe {
     width: 100%;
     height: fit-content;
     float: left;
-
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .stapled-line{
     float: left;
