@@ -212,17 +212,16 @@ iframe {
 
 #allergenListe > ul{
     list-style-image: url('../IMG/listpizza.png');
-
 }
 
 #allergenliste {
     background-color:#CC6328;
-
+    color: white;
 }
 
 #allergenliste p {
     background-color: #CC6328;
-
+    color: white;
 }
 
 #naeringsinnhold {
@@ -239,6 +238,7 @@ iframe {
 
 .cooking-wrapper{
     background-color: #EAEFEC;
+    color: white;
     height: 100%;
     width: 100%;
 }
@@ -300,6 +300,7 @@ iframe {
 
 .navbar {
     background: #333 url("../IMG/navbar-background.png");
+    color: white;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -314,6 +315,7 @@ iframe {
 .logo {
     font-family: "Segoe Script", Verdana, "Verdana", serif;
     font-size: 28px;
+    background-color: transparent;
     color: white;
     text-decoration: none;
 }
@@ -328,6 +330,7 @@ iframe {
 .link {
     display: block;
     text-decoration: none;
+    background-color: transparent;
     color: white;
     font-size: 20px;
     height: 100%;
@@ -335,6 +338,7 @@ iframe {
 
 .link:hover {
     background-color: #cc6328;
+    color: white;
 }
 
 @media only screen and (max-width: 1024px) {
