@@ -484,7 +484,7 @@ iframe {
     margin-bottom: 48px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
     .cooking-thingy {
         width: 45%;
 
@@ -515,7 +515,7 @@ iframe {
 
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   #wrapper {
     padding: 65px;
   }
