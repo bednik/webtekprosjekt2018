@@ -44,41 +44,28 @@
             <div class = "col-1"></div>
             <div class = "col-4">
 
-                <img src="IMG/front_pizza.jpg" width="300">
+                <img src="IMG/front_pizza.jpg" width="300" alt="Pizza-image">
 
             </div>
 
         </div>
         <script>
-            var canvas = document.querySelector('canvas')
+            var canvas = document.querySelector('canvas');
             var context = canvas.getContext('2d');
             context.fillStyle = "white";
             context.fillRect(0,0,canvas.height,canvas.width);
             function drawText(text, x, y) {
             context.fillStyle = 'black';
-            context.font = "20px Bahnschrift"
+            context.font = "20px Bahnschrift";
             context.fillText(text, x, y);
             }
-            drawText("PURE", 7,40)
-            drawText("PERFECTION",16,60)
-            drawText("IN",25,80)
-            drawText("EVERY",34,100)
-            drawText("SLICE", 43, 120)
-        // Toggle-funksjon for navbar (Kun for mobil)
-
-        let navToggled = true;
-        navbarContent = document.getElementById("navContent");
-        function toggleNavigation() {
-            if (!navToggled) {
-                navToggled = true;
-                navbarContent.style.display = "block";
-            } else {
-                navToggled = false;
-                navbarContent.style.display = "none";
-            }
-        }
+            drawText("PURE", 7,40);
+            drawText("PERFECTION",16,60);
+            drawText("IN",25,80);
+            drawText("EVERY",34,100);
+            drawText("SLICE", 43, 120);
     </script>
-    <script type="text/javascript" src="JS/counter.js"></script>
+    <script src="JS/counter.js"></script>
         <footer id="footer"></footer>
         <script src="JS/footer.js">
 
