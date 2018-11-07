@@ -206,31 +206,6 @@ iframe {
     border: 0;
 }
 
-/* --- confirmform.js ---*/
-
-#newsletterconfirmscreen, #contactconfirmscreen {
-    position: fixed;
-    color: black;
-    background-color: #D5D5D5;
-    width: 100%;
-    height: 100%;
-    display: none;
-    animation: fadein 0.3s;
-}
-
-.confirmscreenwrapper {
-    padding: 20px;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
-}
 
 
 /* About */
@@ -634,6 +609,34 @@ iframe {
 @keyframes rotation {
   from { transform: rotate(0deg); }
   to { transform: rotate(359deg); }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+
+/* --- CONFIRMFORM.JS ---*/
+
+#newsletterconfirmscreen, #contactconfirmscreen {
+    z-index: 2;
+    position: fixed;
+    color: black;
+    background-color: #D5D5D5;
+    width: 100%;
+    height: 100%;
+    display: none;
+    animation: fadein 0.3s;
+}
+
+.confirmscreenwrapper {
+    padding: 20px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 @keyframes fadeout {
