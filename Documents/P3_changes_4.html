@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>P3 Changes</title>
+        <link rel="icon" type="image/PNG" href="img/smolblackpizza.png">
+        <link rel="stylesheet" type="text/css" href="CSS/diavolastyle.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>P3 Changes</h1>
+                <h2>By: Bendik, Runar, Christopher, Sander, Ingvild <br>
+                    <span>08.11 2018, Thursday</span>
+                </h2>
+            </header>
+
+            <div  class="section">
+                    <h2>Administrative detaljer</h2>
+                    <p>Vår imaginære kunde er Dr. Oetker.
+                        Med tillatelse fra Dr. Oetker Norge kan vi bruke navn og bilder av
+                        produktet deres Diavola Calabrese.
+
+                    </p>
+            </div>
+
+            <div  class="section">
+                    <h2>Link til nettside</h2>
+                    <p>
+                      <a href="http://folk.ntnu.no/bendinb/webtekprosjekt2018/" target="_blank">http://folk.ntnu.no/bendinb/webtekprosjekt2018/</a>
+                    </p>
+            </div>
+
+            <div  class="section">
+                    <h2>Endringer</h2>
+
+                    <h3>Universelle endringer</h3>
+                    <p>
+                      La til hover-effekt på navbar (oransje bakgrunnsfarge når mus er over hver knapp).
+                    </p>
+
+                    <h3>Endringer på index.html</h3>
+                    <p>
+                      Her ble det lagt til en countdown timer til den internasjonale pizzadagen. Quoteblokken ble endret til en canvas og fnuttene ble fjernet.
+                    </p>
+
+                    <h3>Endringer på about.html</h3>
+                    <p>
+                      Små endringer av oppsett, bildet og tekstboks tar nå 50 % hver av siden. Det ble lagt til allergener i en boks i høyre kolonne og en tabell med næringsinnhold i en boks i venstre kolonne.
+                    </p>
+
+                    <h3>Endringer på reviews.html</h3>
+                    <p>
+                      Minimale endringer i forhold til plan. De grå omtale-boksene tar nå 33% av bredden hver, slik at siden blir mer strukturert. Pizzaikonene ble byttet ut med noen i en større oppløsning, slik at de ble klarere. Rating i hver omtale-boks er venstrejustert og datoen er flyttet opp og er høyrejustert.
+                    </p>
+
+                    <h3>Endringer på cooking.html</h3>
+                    <p>
+                      Små endringer på margins og paddings for at siden skal tilpasses til mobil. Teksten er sentrert.
+                    </p>
+
+                    <h3>Endringer på contact.html</h3>
+                    <p>
+                      Her ble nyhetsbrev-boksen flyttet til den venstre kolonnen. I tillegg ble abonner-knappen flyttet under inntastingsfeltet og et “send”-ikon ble lagt til på venstresiden for å få det på likt format som i kontakt oss-boksen. Under kontaktinfo ble mer informasjon enn planlagt lagt til, i tillegg til et kart som viser besøksadressen til Dr. Oetker.
+                    </p>
+
+                    <h3>Ny script (minimumskrav): counter.js</h3>
+                    <p>
+                      Et nytt JavaScript ble lagt til som teller ned antall dager, timer, minutter og sekunder til den internasjonale pizzadagen (9. februar).
+                    </p>
+            </div>
+
+            <div class="section">
+                <div>
+                    <h2>Endringer av minimumskrav</h2>
+                    <ul>
+                        <li>Knapp for dropdown-meny for mobil
+                            <ul>
+                                <li>En javascript-funksjon som fungerer på mobilversjonen av
+                                    nettsiden. Når knappen trykkes vil menyen komme opp. Denne er flyttet til navbar.js.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Modularitet
+                            <ul>
+                                <li>
+                                    En javascript-funksjon som hindrer gjenbruk av kode.
+                                    Denne vil implementere navigasjonsbaren og footeren til alle sidene.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Loading screen -  pizza som snurrer
+                            <ul>
+                                <li>
+                                    En javascript-funksjon som gir brukeren indikasjon på at nettsiden lastes inn.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Bekreft innsending av kontaktskjema og nyhetsbrev-skjema
+                            <ul>
+                                <li>
+                                    En javascript-funksjon som gjør at det kommer opp en bekreftelse på at
+                                    innsending av skjema er mottatt.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Countdown til internasjonal pizzadag
+                            <ul>
+                                <li>
+                                    En javascript-funksjon som teller ned til den internasjonale pizzadagen i dager, timer, minutter og sekunder.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div  class="section">
+                    <h2>Oppnåelse av minimumskrav</h2>
+                    <ul>
+                      <li>Runar nådde Javascript-kravet om et loading screen, ved å bruke den innebygde funksjonen setInterval, som kjører en annen funksjon ofte. Funksjonen sjekker om siden er lastet inn og fjerner loading screenet når dette stemmer.</li>
+                      <li>Runar nådde Javascript-kravet om bekreftelse av innsending av skjema, ved å bruke eventlistener (submit) på send- og abonnerknappen, som kjører en funksjon som hindrer normal utførelse, og viser en boks med tekst som bekrefter innsendingen. Når returner-knappen trykkes (eventlistener (click)) resettes skjemaet og boksen fjernes.</li>
+                      <li>Ingvild lagde et JavaScript som teller ned antall dager, timer, minutter og sekunder til den internasjonale pizzadagen. Dette ble et nytt minimumskrav, som har blitt lagt til etter P2. Javascriptet fungerer ved å bruke Date objektet, setInterval som er en innebygd funksjon og DOM.</li>
+                      <li>Sander nådde Javascript-kravet om modularitet, ved å lage et skript som kan bruke samme html-kode flere steder. Skriptet fungerer ved at...</li>
+                      <li>Bendik nådde Javascript-kravet om en dropdown-meny til mobilversjonen av nettsiden, ved å skrive et skript som legger til (eller fjerner) klassen “.navHidden” som kun har noe å si for mobilversjonen. Opprinnelig ble dette løst ved å endre direkte på stylen til “.navContent”, men dette førte til at navbaren kunne være skjult og ikke kunne finnes igjen på desktopversjonen.</li>
+                    </ul>
+            </div>
+
+            <div class="section">
+                <div>
+                    <h2>Endelig arbeidsfordeling</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Filnavn</th>
+                                <th>Beskrivelse</th>
+                                <th>Ansvar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>index.html</td>
+                                <td>Hovedsiden på nettstedet</td>
+                                <td>Christopher</td>
+                            </tr>
+                            <tr>
+                                <td>about.html</td>
+                                <td>Informasjon om pizzaen</td>
+                                <td>Ingvild</td>
+                            </tr>
+                            <tr>
+                                <td>contact.html</td>
+                                <td>Inneholder all kontaktinformasjonen</td>
+                                <td>Runar</td>
+                            </tr>
+                            <tr>
+                                <td>reviews.html</td>
+                                <td>Omtaler fra brukere</td>
+                                <td>Runar</td>
+                            </tr>
+                            <tr>
+                                <td>cooking.html</td>
+                                <td>Tips om tilberedning og servering</td>
+                                <td>Sander</td>
+                            </tr>
+                            <tr>
+                                <td>main.css</td>
+                                <td>Inneholder hovedstilen</td>
+                                <td>Alle</td>
+                            </tr>
+                            <tr>
+                                <td>dropdownmobile.js</td>
+                                <td>JavaScript for dropdown-funksjon</td>
+                                <td>Bendik</td>
+                            </tr>
+                            <tr>
+                                <td>loadingscreen.js</td>
+                                <td>JavaScript for loading screen</td>
+                                <td>Runar</td>
+                            </tr>
+                            <tr>
+                                <td>confirmform.js</td>
+                                <td>JavaScript for å bekrefte innsending av form</td>
+                                <td>Runar</td>
+                            </tr>
+                            <tr>
+                                <td>counter.js</td>
+                                <td>JavaScript for nedtelling til internasjonal pizzadagen</td>
+                                <td>Bendik</td>
+                            </tr>
+                            <tr>
+                                <td>navbar.js</td>
+                                <td>Skript for modularitet</td>
+                                <td>Sander</td>
+                            </tr>
+                            <tr>
+                                <td>footer.js</td>
+                                <td>Skript for modularitet</td>
+                                <td>Sander</td>
+                            </tr>
+                            <tr>
+                                <td>Bilder</td>
+                                <td>Sørge for at alle bilder blir tatt</td>
+                                <td>Sander</td>
+                            </tr>
+                            <tr>
+                                <td>Siste sjekk</td>
+                                <td>Sjekking og gjennomgang av innhold</td>
+                                <td>Alle</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div  class="section">
+                    <h2>Oppdatert liste over mappestruktur og filer</h2>
+                    <ul>
+                      <li>index.html</li>
+                      <li>about.html</li>
+                      <li>reviews.html</li>
+                      <li>cooking.html</li>
+                      <li>contact.html</li>
+                      <li>CSS/
+                        <ul>
+                          <li>main.css</li>
+                          <li>indexStyle.css</li>
+                        </ul>
+                      </li>
+                      <li>IMG/
+                        <ul>
+                          <li>rating1.png</li>
+                          <li>rating2.png</li>
+                          <li>rating3.png</li>
+                          <li>rating4.png</li>
+                          <li>rating5.png</li>
+                          <li>hrline.png</li>
+                          <li>cooking_step_1.jpg</li>
+                          <li>cooking_step_2.jpg</li>
+                          <li>cooking_step_3.jpg</li>
+                          <li>cooking_step_4.jpg</li>
+                          <li>navnikon.png</li>
+                          <li>epostikon.png</li>
+                          <li>tlfikon.png</li>
+                          <li>meldingikon.png</li>
+                          <li>sendikon.png</li>
+                          <li>favicon.png</li>
+                          <li>hamburger_icon.png</li>
+                          <li>listpizza.png</li>
+                          <li>loadingpizza.jpg</li>
+                          <li>navbar_background.png</li>
+                          <li>pizza.jpg</li>
+                          <li>pizzaeske.png</li>
+                          <li>reviews_pizza.jpg</li>
+                        </ul>
+                      </li>
+                      <li>JS/
+                        <ul>
+                          <li>footer.js</li>
+                          <li>navbar.js</li>
+                          <li>confirmform.js</li>
+                          <li>loadingscreen.js</li>
+                          <li>counter.js</li>
+                        </ul>
+                      </li>
+                    </ul>
+            </div>
+
+            <div  class="section">
+                    <h2>Hvordan krav om modularitet ble nådd</h2>
+                    <ul>
+                      <li>Kravet om modularitet ble nådd ved å kun ha én CSS-fil (bortsett fra indexStyle.css), i stedet for at alle sidene har hver sin. På denne måten unngår vi å skrive felleskode som farger, skrift osv. flere ganger. I tillegg prøver vi å ha ganske likt oppsett av html slik at mest mulig av CSS blir felles.</li>
+                      <li>HTML-koden til navbar og footer inkluderes ved hjelp av et skript (navbar.js og footer.js), slik at gjenbruk av kode forhindres.</li>
+                    </ul>
+            </div>
+        </div>
+    </body>
+</html>
