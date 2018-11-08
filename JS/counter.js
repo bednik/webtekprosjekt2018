@@ -1,6 +1,9 @@
 
     //henter inn diven fra html
-    let div = document.querySelector("#counterHere");
+    let cDays = document.querySelector("#cDays");
+    let cHours = document.querySelector("#cHours");
+    let cMin = document.querySelector("#cMin");
+    let cSec = document.querySelector("#cSec");
     //lager funksjonen counter som skal lage en nedtelling
     function counter() {
       //tiden nå
@@ -15,7 +18,10 @@
       let seconds = Math.floor((result% (1000*60) / (1000)));
 
       //for å vise resultatet
-      div.innerHTML = days + "d " + hours + "t " + minutes + "min " + seconds + "s ";
+      cDays.innerHTML = days + "d";
+      cHours.innerHTML = hours + "t";
+      cMin.innerHTML = minutes + "min";
+      cSec.innerHTML = seconds + "sec";
 
       //hvis resutat blir mindre en null betyr det at dagen som telles ned tilhar vært
       if (result < 0) {

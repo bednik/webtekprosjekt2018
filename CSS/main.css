@@ -9,7 +9,17 @@ body {
     font-weight: normal;
     margin: 0;
 }
-
+.inner {
+  display: inline;
+  border-width:2px 2px 2px 2px;
+  border-style: dotted;
+  padding: 3px;
+  margin: 5px;
+  font-size: 20px;
+}
+.outer {
+  text-align: center;
+}
 #wrapper {
     max-width: 1300px;
     margin: auto;

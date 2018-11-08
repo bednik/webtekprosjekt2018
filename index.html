@@ -28,13 +28,15 @@
                 <div class="col-50">
 
                     <p>
-                        Velkommen til denne siden om pizzaen Diavola Calabrese! Her kan du finne informasjon 
-                        om pizzaen, omtaler fra våre kunder, tips til tilberedning og kontakside med kontaktsinformasjon. 
-                        Naviger mellom sidene ved hjelp av navigasjonsbaren øverst til høyre. Diavola calabrese er og 
+                        Velkommen til denne siden om pizzaen Diavola Calabrese! Her kan du finne informasjon
+                        om pizzaen, omtaler fra våre kunder, tips til tilberedning og kontakside med kontaktsinformasjon.
+                        Naviger mellom sidene ved hjelp av navigasjonsbaren øverst til høyre. Diavola calabrese er og
                         blir en favoritt og vi håper derfor at du også vil like vår favorittpizza!
                     </p>
                     <p>Nedtelling til internasjonal pizzadag:</p>
-                    <div id="counterHere"></div>
+                    <div class="outer">
+                      <div class="inner" id="cDays"></div><div class="inner" id="cHours"></div>  <div class="inner" id="cMin"></div><div class="inner" id="cSec"></div>
+                    </div>
 
                 </div>
                 <div class="col-8"></div>
@@ -70,7 +72,7 @@
             drawText("EVERY",34,100);
             drawText("SLICE", 43, 120);
         </script>
-        
+
         <script src="JS/footer.js"></script>
         <script src="JS/counter.js"></script>
     </body>
