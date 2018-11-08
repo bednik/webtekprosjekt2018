@@ -18,6 +18,12 @@ body {
     padding: 20px;
     position: relative;
 }
+/*To make the site work on tiny phones like iphone 5*/
+@media only screen and (max-width: 360px){
+    #wrapper {
+        padding: 5px;
+    }
+}
 
 .box {
     float: left;
@@ -229,66 +235,6 @@ iframe {
     padding: 20px 50px 10px 20px;
 }
 
-/* Cooking */
-
-.cooking-wrapper{
-    background-color: #EAEFEC;
-    color: white;
-    height: 100%;
-    width: 100%;
-}
-.cooking-number{
-    float: left;
-    margin: 30px 0;
-    width: 13%;
-    font-size: 72px;
-    text-shadow:1px 1px black ;
-    text-align: center;
-}
-
-.cooking-text{
-    margin: auto 0;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    width: 37%;
-}
-.cooking-text-wrapper{
-    display: table;
-    float: left;
-    width: 37%;
-    height: 150px;
-}
-.cooking-image{
-    float: right;
-    box-shadow: 0 0 5px 0.2px black;
-    height: 148px;
-    width: 148px;
-}
-
-.cooking-thingy{
-    box-sizing: border-box;
-    display: table;
-    background-color: #5D6C3C;
-    color: white;
-    text-align: left;
-    box-shadow: 0 0 5px 0.2px black;
-    padding: 10px;
-    width: 100%;
-    height: fit-content;
-    float: left;
-    margin-bottom: 20px;
-}
-.stapled-line{
-    float: left;
-    border-left: 5px dashed white;
-    height: 150px;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-.cooking-4{
-    margin-bottom: 48px;
-}
 
 /* NAVBAR */
 
@@ -462,7 +408,66 @@ iframe {
 }
 
 
+/* Cooking */
 
+.cooking-wrapper{
+    background-color: #EAEFEC;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+.cooking-number{
+    float: left;
+    margin: 30px 0;
+    width: 10%;
+    font-size: 72px;
+    text-shadow:1px 1px black ;
+    text-align: center;
+}
+
+.cooking-text{
+    margin: auto 0;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 37%;
+}
+.cooking-text-wrapper{
+    display: table;
+    float: left;
+    width: 37%;
+    height: 150px;
+}
+.cooking-image{
+    float: right;
+    box-shadow: 0 0 5px 0.2px black;
+    height: 148px;
+    width: 148px;
+}
+
+.cooking-thingy{
+    box-sizing: border-box;
+    display: table;
+    background-color: #5D6C3C;
+    color: white;
+    text-align: left;
+    box-shadow: 0 0 5px 0.2px black;
+    padding: 10px;
+    width: 100%;
+    height: fit-content;
+    float: left;
+    margin-bottom: 20px;
+}
+.stapled-line{
+    float: left;
+    border-left: 5px dashed white;
+    height: 150px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.cooking-4{
+    margin-bottom: 48px;
+}
 
 @media only screen and (min-width: 1025px) {
     .cooking-thingy {
@@ -492,7 +497,19 @@ iframe {
     .stapled-line{
         margin-right: 20px;
     }
+    .cooking-number{
+        width: 13%;
+    }
 
+}
+/*To make the site work on tiny phones like iphone 5*/
+@media only screen and (max-width: 359px){
+    .cooking-thingy{
+        padding: 3px;
+    }
+    .cooking-text-wrapper{
+        width: 33%;
+    }
 }
 
 
