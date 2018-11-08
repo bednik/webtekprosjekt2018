@@ -297,6 +297,10 @@ iframe {
         width: 100%;
     }
 
+    .hamburger:hover {
+      cursor: pointer;
+    }
+
     .hamburger {
         display: inline-block;
         width: 70px;
