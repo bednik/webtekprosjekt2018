@@ -1,4 +1,4 @@
-// Importer navbaren. Skriptet plasseres der man vil at navbaren skal være.
+// Skriver HTMl-koden til footeren. En div med id footer plasseres der man vil at footeren skal være.
 let footervar = "<footer id=\"footer\">\n" +
     "    <div>\n" +
     "        <div id=\"copyright\">&copy; 2018 Diavola Calabrese</div>\n" +

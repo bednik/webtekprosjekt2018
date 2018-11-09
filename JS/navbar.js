@@ -1,4 +1,4 @@
-// Importer navbaren. Skriptet plasseres der man vil at navbaren skal være.
+// Skriver HTMl-koden til navbaren. En div med id navbar plasseres der man vil at navbaren skal være.
 let navbar = "<nav class=\"navbar\">\n" +
     "    <div class=\"mobileContainer\">\n" +
     "        <button onclick=\"toggleNavigation()\" class=\"hamburger\"><img src=\"IMG/hamburger_icon.png\"></button>\n" +

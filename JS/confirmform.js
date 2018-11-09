@@ -1,3 +1,4 @@
+// Får tak i alle innvolverte elementer
 const contact = document.getElementById("contact")
 const newsletter = document.getElementById("newsletter")
 const closebutton1 = document.getElementById("closebutton1")
@@ -9,6 +10,7 @@ const newsletterconfirmscreen = document.getElementById("newsletterconfirmscreen
 var nameout = document.getElementById("nameout")
 var emailout = document.getElementById("emailout")
 
+// Sjekker når kontakt oss-formen sendes, og viser contactconfirmscreen
 contact.addEventListener("submit", function(event) {
   event.preventDefault()
   var contactname = document.getElementById("contactname").value
@@ -16,6 +18,7 @@ contact.addEventListener("submit", function(event) {
   contactconfirmscreen.style.display = "block"
 })
 
+// Sjekker når nyhetsbrev-formen sendes, og viser newsletterconfirmscreen
 newsletter.addEventListener("submit", function(event) {
   event.preventDefault()
   newsletterconfirmscreen.style.display = "block"
@@ -23,7 +26,7 @@ newsletter.addEventListener("submit", function(event) {
   emailout.innerText = newsletteremail
 })
 
-// Close contact confirm page
+// Lukker contactconfirmscreen
 closebutton1.addEventListener("click", function() {
   contact.reset()
   contactconfirmscreen.style.animation = ""
@@ -34,7 +37,7 @@ closebutton1.addEventListener("click", function() {
   }, 250)
 })
 
-// Close newsletter confirm page
+// Lukker newsletterconfirmscreen
 closebutton2.addEventListener("click", function() {
   newsletter.reset()
   newsletterconfirmscreen.style.animation = ""
