@@ -14,26 +14,26 @@ body{
 #navbar-wrapper{
   width: 100%;
 }
-
-#wrapper {
-  padding-top: 0;
-}
-
 @media screen and (max-width: 1024px){
-
-  .row{
-    padding: 20px 0 50px 0;
+  #wrapper{
+    width: fit-content;
   }
+  .row{
+    padding:0;
+    float: left;
+  }
+
   .col-7{
     background-color: #cc6328;
     border: 1px solid #cc6328;
     border-radius: 5px;
-    margin: 20px 10px;
+    margin-bottom: 20px;
     box-shadow: 0 0 5px 0.5px black;
-    width: 309px;
+    width: 310px;
     position: relative;
-    left: calc(50% - 150px);
+    left: calc(50% - 155px);
   }
+
   .col-50{
     color: white;
     padding: 15px;
@@ -48,18 +48,20 @@ body{
   }
   .col-4{
     position: relative;
-    right: calc(50% - 179px);
-    padding: 10px;
+    right: calc(50% - 155px);
+    float: left
   }
   .col-25{
     padding: 10px 0;
   }
+
   #canvas{
     border-radius: 5px;
     position: relative;
     left: calc(50% - 71px);
     box-shadow: 7px 7px 5px #a55222;
   }
+
   hr {
     background-image: url(../IMG/hrline.png);
     height: 6px;
@@ -89,7 +91,6 @@ body{
 }
 
 @media screen and (min-width: 1025px) {
-
 
   .col-1  {width: 7.69%;}
   .col-25 {width: 25%;}
