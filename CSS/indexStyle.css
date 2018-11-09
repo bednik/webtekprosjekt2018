@@ -14,8 +14,13 @@ body{
 #navbar-wrapper{
   width: 100%;
 }
+
+#wrapper {
+  padding-top: 0;
+}
+
 @media screen and (max-width: 1024px){
-  
+
   .row{
     padding: 20px 0 50px 0;
   }
@@ -84,8 +89,8 @@ body{
 }
 
 @media screen and (min-width: 1025px) {
-  
-  
+
+
   .col-1  {width: 7.69%;}
   .col-25 {width: 25%;}
   .col-8  {width: 8.33%;}
