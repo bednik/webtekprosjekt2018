@@ -2,12 +2,26 @@
 
 /* Felles CSS */
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
 body {
     background-color: #EAEFEC;
     color: black;
     font-family: "Bahnschrift", sans-serif;
     font-weight: normal;
     margin: 0;
+    position: relative;
+    min-height: 100%;
 }
 .inner {
   display: inline;
@@ -18,15 +32,18 @@ body {
   font-size: 20px;
 }
 .outer {
-  
+
 }
 #wrapper {
-    max-width: 1300px;
+    display: inline-block;
     margin: auto;
+    max-width: 1300px;
     box-sizing: border-box;
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 /*To make the site work on tiny phones like iphone 5*/
 @media only screen and (max-width: 360px){
@@ -109,9 +126,9 @@ a {
 }
 
 #footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    background: #393939;
+    background-color: #393939;
     width: 100%;
     color: white;
     padding-top: 12px;
@@ -120,11 +137,12 @@ a {
 
 #copyright{
     float: left;
-    margin-left: 12px;
+    margin-left: 20px;
 }
+
 #footer_contact{
     float: right;
-    margin-right: 12px;
+    margin-right: 20px;
 }
 @media only screen and (max-width: 1024px) {
     #footer{
@@ -531,7 +549,7 @@ iframe {
 
 @media screen and (min-width: 1025px) {
   #wrapper {
-    padding: 65px;
+    padding: 65px 65px 0 65px;
   }
 
   .table {
