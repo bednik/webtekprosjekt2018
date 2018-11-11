@@ -1,5 +1,5 @@
 
-    //henter inn diven fra html
+    //henter inn id'er fra htmldokumentet
     let cDays = document.querySelector("#cDays");
     let cHours = document.querySelector("#cHours");
     let cMin = document.querySelector("#cMin");
@@ -23,11 +23,11 @@
       cMin.innerHTML = minutes + " min";
       cSec.innerHTML = seconds + " sek";
 
-      //hvis resutat blir mindre en null betyr det at dagen som telles ned tilhar vært
+      //hvis resutat blir mindre en null betyr det at dagen som telles ned til har vært
       if (result < 0) {
         clearInterval(call);
         div.innerHTML = "Datoen har vært, men det er bare å glede seg til neste år";
       }
     }
-    //kaller på funksjoene hvert sekund
+    //kaller på funksjonen hvert sekund
     let call = setInterval(function() {counter()}, 1000);

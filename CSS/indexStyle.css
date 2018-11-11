@@ -29,12 +29,12 @@ body{
     border-radius: 5px;
     margin-bottom: 20px;
     box-shadow: 0 0 5px 0.5px black;
-    width: 310px;
+    width: 386px;
     position: relative;
-    left: calc(50% - 155px);
+    left: calc(50% - 192px);
   }
 
-  .col-50{
+  .col-66{
     color: white;
     padding: 15px;
 
@@ -48,7 +48,7 @@ body{
   }
   .col-4{
     position: relative;
-    right: calc(50% - 155px);
+    right: calc(50% - 193px);
     float: left
   }
   .col-25{
@@ -91,13 +91,17 @@ body{
 }
 
 @media screen and (min-width: 1025px) {
-
+  #wrapper{
+    padding: 0px;
+  }
   .col-1  {width: 7.69%;}
+  .col-3  {width: 3.845%;}
   .col-25 {width: 25%;}
   .col-8  {width: 8.33%;}
   .col-4  {width: 30.77%;}
   .col-5  {width: 38.46%;}
   .col-50 {width: 50%;}
+  .col-66 {width: 66.66%}
   .col-7  {width: 53.84%;}
   .col-9  {width: 69.23%;}
   .col-10 {width: 76.92%;}
@@ -115,7 +119,7 @@ body{
     display: table;
   }
   .row{
-    padding: 65px 0;
+    padding: 55px 0 0 10px;
   }
 
   #canvas{
@@ -135,6 +139,8 @@ body{
     border-color: #cc6328;
     border-radius: 5px;
     box-shadow: 0 0 5px 0.5px black;
+    height: 360px;
+    padding: 10px 0 0 10px;
   }
   .col-8{
     border-color: #cc6328;
@@ -143,13 +149,13 @@ body{
     border-color: #cc6328;
     padding: 65px 30px;
   }
-  .col-50{
+  .col-66{
     height: 285px;
     border-color: #cc6328;
     color: white;
   }
-  .col-50 p{
-    padding: 11px 0;
+  .col-66 p{
+    padding: 7px 0;
     margin: 0;
 
   }
