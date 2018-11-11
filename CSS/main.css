@@ -25,8 +25,7 @@ body {
 }
 .inner {
     display: inline;
-    border-width:2px 2px 2px 2px;
-    border-style: dotted;
+    border: 2px dotted;
     padding: 3px;
     margin: 5px;
     font-size: 20px;
@@ -176,8 +175,7 @@ a {
 }
 
 #averagerating {
-    margin: auto;
-    margin-top: 10px;
+    margin: 10px auto auto;
     display: block;
     height: 30px;
 }
@@ -194,8 +192,7 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
     background-color: #E5E5E5;
     color: #323232;
     resize: vertical;
-    border-color: transparent;
-    border-width: 1px;
+    border: 1px transparent;
     border-radius: 5px;
     box-shadow: 0 0 2px 0.1px black;
     min-height: 60px;
