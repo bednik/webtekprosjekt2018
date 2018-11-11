@@ -1,5 +1,5 @@
 body {
-    background-color: #ffece0;
+    background-color: #eaefec;
     color: black;
     font-family: "Verdana", Verdana, serif;
 }
@@ -57,4 +57,11 @@ td,th{
 tbody tr:nth-child(2n+1){
     background-color: #80ffb3;
     color: black;
+}
+.graphs{
+    width: 50%;
+    margin: 0 25%;
+}
+.graphs img{
+    width: 100%;
 }
